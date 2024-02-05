@@ -1,0 +1,29 @@
+/* ポップアップ用のスタイル */
+.popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+}
+
+.popup-image {
+  max-width: 50%;
+  max-height: 50%;
+}
+
+.tp_item_grid {
+  width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+
+  img {
+    max-width: 300px;
+  }
+}

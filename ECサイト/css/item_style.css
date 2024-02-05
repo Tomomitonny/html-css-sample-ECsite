@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+/*-------------------------------------------
+商品ページ
+-------------------------------------------*/
+#item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+#item .item-image {
+  max-width: 400px;
+  flex-shrink: 0;
+  margin-right: 60px;
+}
+#item .item-info p {
+  margin-bottom: 30px;
+  line-height: 1.9;
+}
+
+#item .item-info .item-title {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border-top: solid 1px #c3c3c3;
+  border-bottom: solid 1px #c3c3c3;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#item .item-info .order-table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+#item .item-info .order-table .color,
+#item .item-info .order-table .size {
+  width: 20%;
+}
+#item .item-info .order-table .quantity {
+  width: 60%;
+}
+
+#item .item-info .order-table td {
+  border-top: solid 1px #c3c3c3;
+}
+
+#item .item-info .order-table th,
+#item .item-info .order-table td {
+  font-weight: normal;
+  padding: 10px;
+  border-right: solid 1px #c3c3c3;
+  text-align: center;
+}
+/*
+th、tdの最後だけ右の線を消す
+*/
+#item .item-info .order-table th:last-child,
+#item .item-info .order-table td:last-child {
+  border-right: none;
+}
+/*
+-moz-appearance: menulist;
+-webkit-appearance: menulist;
+セレクトボックスに右端の矢印を表示
+*/
+#item .item-info .order-table select {
+  width: 100%;
+  border: solid 1px #c3c3c3;
+  padding: 0 10px;
+  background: #fff;
+  -moz-appearance: menulist;
+  appearance: menulist;
+}
+#item .item-info .cart-btn {
+  width: 100%;
+  background-color: #4B4B4B;
+  color: #fff;
+  display: block;
+  line-height: 1;
+  padding: 18px 0;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#item .item-info .size-table {
+  width: 100%;
+  border-top: solid 1px #c3c3c3;
+  border-left: solid 1px #c3c3c3;
+}
+#item .item-info .size-table .size {
+  width: 16%;
+}
+#item .item-info .size-table .chest,
+#item .item-info .size-table .weist,
+#item .item-info .size-table .height {
+  width: 28%;
+}
+#item .item-info .size-table th {
+  background: rgb(218, 218, 218);
+}
+
+#item .item-info .size-table th,
+#item .item-info .size-table td {
+  font-weight: normal;
+  padding: 10px;
+  border-right: solid 1px #c3c3c3;
+  border-bottom: solid 1px #c3c3c3;
+  text-align: center;
+}
+
+
+/*-------------------------------------------
+SP
+-------------------------------------------*/
+@media screen and (max-width: 896px) {
+  #item {
+    flex-direction: column;
+  }
+  #item .item-image {
+    max-width: 100%;
+    margin: 0 0 10px 0;
+  }
+  #item .item-info {
+    padding: 0 16px;
+  }
+}

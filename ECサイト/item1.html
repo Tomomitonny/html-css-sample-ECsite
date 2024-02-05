@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Popup</title>
+    <link rel="stylesheet" href="css/test.css">
+    
+</head>
+<body>
+
+<!-- 対象のimg要素 -->
+<div class="tp_item_grid">
+  <a href="index.html" id="linkedImage">
+    <div class="tp_item">
+      <img id="imageToPopup" src="img/item/goods01.png" alt="Sample Image" onclick="openPopup(this,event),getImageLink(this)">
+    </div>
+  </a>
+  <div class="tp_item">
+    <img id="imageToPopup" src="img/item/goods03.png" alt="Sample Image" onclick="openPopup(this)">
+  </div>
+  <div class="tp_item">
+    <img id="imageToPopup" src="img/item/goods05.png" alt="Sample Image" onclick="openPopup(this)">
+  </div>
+  <div>
+    <img id="imageToPopup" src="img/item/goods02.png" alt="Sample Image" onclick="openPopup(this)">
+  </div>
+</div>
+
+<!-- ポップアップ用のコンテナ -->
+<div id="popupContainer" class="popup-container" onclick="closePopup()">
+    <img id="popupImage" class="popup-image">
+    <button onclick="restoreDefaultBehavior()">Restore Default Behavior</button>
+
+    
+</div>
+
+
+<script src="js/2test.js" ></script>
+</body>
+</html>
